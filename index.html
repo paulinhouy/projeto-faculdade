@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriVida - Produtos Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>NutriVida</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="#imc">Calcular IMC</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="vendas">
+      <h2>Alimente seu corpo com o melhor da nutrição!</h2>
+      <p>Suplementos, alimentos naturais e produtos fitness selecionados para melhorar sua performance e qualidade de vida.</p>
+
+      <div id="produtos" class="produtos">
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?whey-protein" alt="Whey Protein" />
+          <h3>Whey Protein</h3>
+          <p>Melhore seus resultados com Whey Protein de alta qualidade.</p>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?creatina" alt="Creatina" />
+          <h3>Creatina</h3>
+          <p>Ganhe força e resistência com Creatina pura.</p>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/300x200/?barrinha-fit" alt="Barrinhas Fit" />
+          <h3>Barrinhas Fit</h3>
+          <p>Uma opção prática e saudável para o seu dia a dia.</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-rodape">
+      <div class="login">
+        <h4>Acesso</h4>
+        <form>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Senha" />
+          <button type="button">Login</button>
+          <a href="#">Cadastrar-se</a>
+        </form>
+      </div>
+
+      <div class="imc" id="imc">
+        <h4>Calculadora de IMC</h4>
+        <input type="number" id="peso" placeholder="Peso (kg)" />
+        <input type="number" id="altura" placeholder="Altura (m)" />
+        <button id="btnCalcular">Calcular</button>
+        <p id="resultado"></p>
+      </div>
+
+      <div class="contato">
+        <h4>Contato</h4>
+        <p>Email: contato@nutrividafit.com</p>
+        <p>Instagram: @nutrividafit</p>
+        <p>Telefone: (85) 99999-9999</p>
+      </div>
+    </div>
+    <p class="direitos">© 2025 NutriVida - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
