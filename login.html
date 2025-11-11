@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="src/img/favicon_cachorro.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -16,6 +17,39 @@
       <a href="imc.html">Calcular IMC</a>
     </nav>
   </header>
+   <div id="principal">
+        <h1>LOGIN</h1>
+        <form action="pagina2.html" onsubmit=" return verificar()">
+            <div>
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="📩 Email">
+            </div>  
+            <div>
+            <label for="senha"></label>
+            <input type="password" id="senha" placeholder="🔒 Senha">
+            </div>
+            <input type="submit" id="botao" value="LOGAR">
+            <script>
+                function verificar(){
+                    var pergunta1=document.getElementById('nome')
+                    var pergunta2=document.getElementById('senha')
+                    if (pergunta1.value.length ===0){
+                        window.alert('Campo email invalido')
+                        return false
+                    }
+                    else if(pergunta2.value.length ===0){
+                        window.alert('Insira sua senha')
+                        return false
+                    }
+                return true
+                }
+            </script>
+        </form>
+        <div id="partebaixo">
+            <p>siga nos nas redes sociais</p>
+            
+        </div>
+    </div>
     
 </body>
 </html>
