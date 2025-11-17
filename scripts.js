@@ -29,8 +29,4 @@ document.getElementById("btnCalcular").addEventListener("click", function () {
     } else {
         document.getElementById("resultado").textContent = "Preencha os campos corretamente.";
     }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> f0839d87088f955d8ba3b38cb5e618d4b13cb6e2
